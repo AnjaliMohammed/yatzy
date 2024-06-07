@@ -3,11 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Roller</title>
+    <title>Test</title>
 </head>
 <body>
-    <button id="rollButton" onclick="rollDice()">Roll Dice</button>
-    <div id="result"></div>
+    <script src="assets/yatzy_game.js"></script>
     <script src="assets/dice.js"></script>
+
+    <h1>Yatzy Game</h1>
+    <button id="rollButton" onclick="YatzyGame.rollDice()">Roll Dice</button>
+    <button id="resetButton" onclick="YatzyGame.resetGame()">Reset Game</button>
+    <div>
+        <label for="diceKeep1">Keep Dice 1</label>
+        <input type="checkbox" id="diceKeep1" onchange="YatzyGame.toggleKeep(0)">
+        <label for="diceKeep2">Keep Dice 2</label>
+        <input type="checkbox" id="diceKeep2" onchange="YatzyGame.toggleKeep(1)">
+        <label for="diceKeep3">Keep Dice 3</label>
+        <input type="checkbox" id="diceKeep3" onchange="YatzyGame.toggleKeep(2)">
+        <label for="diceKeep4">Keep Dice 4</label>
+        <input type="checkbox" id="diceKeep4" onchange="YatzyGame.toggleKeep(3)">
+        <label for="diceKeep5">Keep Dice 5</label>
+        <input type="checkbox" id="diceKeep5" onchange="YatzyGame.toggleKeep(4)">
+    </div>
+    <div id="result"></div>
 </body>
 </html>
