@@ -1,3 +1,8 @@
 # Yatzy
 
-This is a sample README file for CSI3140 lab
+This is the submission for CSI 3140 Lab 4 (JS files and test html for the Yatzy Game implementation)
+
+Group Members of Group 4:
+
+Anjali Mohammed (300242701)
+Mohamad Kassas (300262585)
